@@ -84,8 +84,8 @@ public class Ejercicio2 {
                     
                     System.out.println("Introduza cu: ");
                     String ciBuscar = sc.next();
-                    int contador=0;
                     /*
+                    int contador=0;
                     do{
                         if (listaalumno.get(contador).getCu()== cuBuscar) {
                             listaalumno.remove(0);
