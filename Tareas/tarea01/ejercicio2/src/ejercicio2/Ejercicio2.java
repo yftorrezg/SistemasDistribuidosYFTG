@@ -36,11 +36,14 @@ public class Ejercicio2 {
         String apellido = "";
         String ci = "";
         String cu = "";
-
+        
         Scanner sc = new Scanner(System.in);
         int numero;
         int opc;
         do {
+            System.out.println("--------------");
+            System.out.println("-----Menu-----");
+            System.out.println("--------------");
             System.out.println("1. Insertar: ");
             System.out.println("2. Eliminar: ");
             System.out.println("3. Mostrar: ");
@@ -57,6 +60,9 @@ public class Ejercicio2 {
                     ci = sc.next();
                     System.out.println("Introduzca su cu: ");
                     cu = sc.next();
+                    System.out.println("----------------------");
+                    System.out.println("Introduzca su materia: ");
+                    System.out.println("----------------------");
                     System.out.println("1. Solo Sis258");
                     System.out.println("2. Solo Sis256");
                     System.out.println("3. Ambas materias");
@@ -82,7 +88,7 @@ public class Ejercicio2 {
                 }
                 case 2: {
                     
-                    System.out.println("Introduza cu: ");
+                    System.out.println("Introduza ci: ");
                     String ciBuscar = sc.next();
                     /*
                     int contador=0;

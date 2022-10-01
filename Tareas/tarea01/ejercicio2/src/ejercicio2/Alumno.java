@@ -72,7 +72,7 @@ public class Alumno {
         for (Materia aux : materias) {
             cadena += aux.getNombre()+ " ";
         }
-        return "Alumno{" + "nombre=" + nombre + ", apellido=" + apellido + ", ci=" + ci + ", cu=" + cu + ", materias=" + cadena + '}';
+        return "Alumno{" + " Nombre: " + nombre + ", Apellido: " + apellido + ", CI: " + ci + ", CU: " + cu + ", Materias: " + cadena + '}';
     }
 
 }
