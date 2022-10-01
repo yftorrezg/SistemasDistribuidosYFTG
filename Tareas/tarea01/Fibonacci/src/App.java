@@ -18,6 +18,7 @@ public class App {
             a = b;
             b = c;
         }
-
+        // cerrar scanner
+        sc.close();
     }
 }

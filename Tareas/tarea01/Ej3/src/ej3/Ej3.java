@@ -147,5 +147,7 @@ public class Ej3 {
             }
 
         } while (num != 5);
+        sc.close();
+
     }
 }

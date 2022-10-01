@@ -114,13 +114,15 @@ public class Ejercicio2 {
                     for (Alumno aux : listaalumno) {
                         System.out.println(aux);
                     }
-                    break;
                 } 
+                break;
                 
                 default:
                     break;
             }
         } while (numero != 4);
+        sc.close();
+
     }
 
 }
