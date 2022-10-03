@@ -16,17 +16,15 @@ import java.util.Scanner;
  * @author fer
  */
 public class ClienteTCP {
-      public static void main(String[] args) {
+    public static void main(String[] args) {
         // TODO code application logic here
         int port = 5002;
-        Scanner sc=  new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Por favor introduzca una cadena/frase: ");
-        String cadena=sc.next();
+        String cadena = sc.next();
         System.out.println("\n La cadena/frase introducida es: " + cadena);
-        String aux="";
-        
-        
-        
+        String aux = "";
+
         try {
             Socket client = new Socket("localhost", port);
             PrintStream toServer = new PrintStream(client.getOutputStream());
@@ -34,8 +32,7 @@ public class ClienteTCP {
             toServer.println(cadena);
             String result = fromServer.readLine();
             System.out.println("\nCadena Invertida: " + result);
-            
-            
+
         } catch (IOException e) {
             System.out.println(e.getMessage());
         }

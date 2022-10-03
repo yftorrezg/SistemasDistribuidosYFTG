@@ -7,7 +7,7 @@ public class Cadena {
     String cadena = input.nextLine();
 
     String cadenaInvertida = "";
-    System.out.println("\n La cadena/frase introducida es: " + cadena);
+    System.out.println("\nLa cadena/frase introducida es: " + cadena);
 
     for (int i = cadena.length() - 1; i >= 0; i--) {
       cadenaInvertida += cadena.charAt(i);

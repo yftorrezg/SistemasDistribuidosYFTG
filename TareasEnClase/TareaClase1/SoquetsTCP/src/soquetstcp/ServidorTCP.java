@@ -26,10 +26,10 @@ public class ServidorTCP {
             System.out.println("Se inicio el servidor con éxito");
             Socket client;
             PrintStream toClient;
-            client = server.accept(); //conexion
+            client = server.accept(); // conexion
             BufferedReader fromClient = new BufferedReader(new InputStreamReader(client.getInputStream())); // el lector
             System.out.println("Cliente se conecto");
-            //System.out.println(fromClient.readLine());
+            // System.out.println(fromClient.readLine());
             // CAMBIOS AL CODIGO
             String cadena = fromClient.readLine();
             String cadenaInvertida = invertirString(cadena);
