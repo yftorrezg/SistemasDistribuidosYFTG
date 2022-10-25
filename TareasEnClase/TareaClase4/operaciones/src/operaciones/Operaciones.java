@@ -12,13 +12,13 @@ public class Operaciones extends UnicastRemoteObject implements IOperaciones {
         super(); // constructor de la clase padre
     }
 
-    @Override
+    @Override 
     public void anotar(int a, int b) throws RemoteException {
         this.a = a;
         this.b = b;
     }
 
-    @Override
+    @Override 
     public int sumar() throws RemoteException {
         return this.a + this.b;
     }

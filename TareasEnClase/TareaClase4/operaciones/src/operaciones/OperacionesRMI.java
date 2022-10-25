@@ -59,11 +59,7 @@ public class OperacionesRMI {
                 }
                 // entrada.close();
             }
-        } catch (NotBoundException ex) {
-            Logger.getLogger(OperacionesRMI.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (MalformedURLException ex) {
-            Logger.getLogger(OperacionesRMI.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (RemoteException ex) {
+        } catch (NotBoundException | MalformedURLException | RemoteException ex) {
             Logger.getLogger(OperacionesRMI.class.getName()).log(Level.SEVERE, null, ex);
         }
         entrada.close();
