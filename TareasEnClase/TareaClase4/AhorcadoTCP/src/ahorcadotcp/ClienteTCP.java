@@ -17,7 +17,7 @@ public class ClienteTCP {
       String opcion;
       char letra;
       boolean inicio = true;
-
+ 
       do {
 
         Socket client = new Socket("localhost", port); // server localhost, port 5010.

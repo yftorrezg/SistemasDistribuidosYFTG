@@ -16,6 +16,7 @@ import java.util.Scanner;
  * @author fer
  */
 public class ClienteTCP {
+
     public static void main(String[] args) {
         // TODO code application logic here
         int port = 5002;

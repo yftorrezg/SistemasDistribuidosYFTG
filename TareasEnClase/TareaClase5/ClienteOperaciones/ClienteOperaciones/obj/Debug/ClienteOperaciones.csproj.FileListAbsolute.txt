@@ -1,0 +1,10 @@
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\bin\Debug\ClienteOperaciones.exe.config
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\bin\Debug\ClienteOperaciones.exe
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\bin\Debug\ClienteOperaciones.pdb
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\obj\Debug\ClienteOperaciones.csproj.AssemblyReference.cache
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\obj\Debug\ClienteOperaciones.Form1.resources
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\obj\Debug\ClienteOperaciones.Properties.Resources.resources
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\obj\Debug\ClienteOperaciones.csproj.GenerateResource.cache
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\obj\Debug\ClienteOperaciones.csproj.CoreCompileInputs.cache
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\obj\Debug\ClienteOperaciones.exe
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\TareasEnClase\TareaClase5\ClienteOperaciones\ClienteOperaciones\obj\Debug\ClienteOperaciones.pdb
