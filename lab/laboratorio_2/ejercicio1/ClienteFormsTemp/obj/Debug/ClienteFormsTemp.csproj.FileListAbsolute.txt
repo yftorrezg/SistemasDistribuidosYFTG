@@ -1,0 +1,10 @@
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\bin\Debug\ClienteFormsTemp.exe.config
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\bin\Debug\ClienteFormsTemp.exe
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\bin\Debug\ClienteFormsTemp.pdb
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\obj\Debug\ClienteFormsTemp.csproj.AssemblyReference.cache
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\obj\Debug\ClienteFormsTemp.Form1.resources
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\obj\Debug\ClienteFormsTemp.Properties.Resources.resources
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\obj\Debug\ClienteFormsTemp.csproj.GenerateResource.cache
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\obj\Debug\ClienteFormsTemp.csproj.CoreCompileInputs.cache
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\obj\Debug\ClienteFormsTemp.exe
+D:\_UFXC\Ing. CIENCIAS\6\4-SIS258\SistemasDistribuidosYFTG\lab\laboratorio_2\ejercicio1\ClienteFormsTemp\obj\Debug\ClienteFormsTemp.pdb
