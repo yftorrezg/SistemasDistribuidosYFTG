@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="SincronizarFechaHora">
+        <s:complexType />
+      </s:element>
+      <s:element name="SincronizarFechaHoraResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SincronizarFechaHoraResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCufd">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="idambiente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="modalidad" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="nit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ObtenerCufdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ObtenerCufdResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EmitirFactura">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="idambiente" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="nit" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="cufd" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="modalidad" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="factura" type="tns:Factura" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Factura">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Nit" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="RazonSocial" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Fecha" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cuf" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="TipoDocumentoCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NombreCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroFactura" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="EmitirFacturaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="EmitirFacturaResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="SincronizarFechaHoraSoapIn">
+    <wsdl:part name="parameters" element="tns:SincronizarFechaHora" />
+  </wsdl:message>
+  <wsdl:message name="SincronizarFechaHoraSoapOut">
+    <wsdl:part name="parameters" element="tns:SincronizarFechaHoraResponse" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCufdSoapIn">
+    <wsdl:part name="parameters" element="tns:ObtenerCufd" />
+  </wsdl:message>
+  <wsdl:message name="ObtenerCufdSoapOut">
+    <wsdl:part name="parameters" element="tns:ObtenerCufdResponse" />
+  </wsdl:message>
+  <wsdl:message name="EmitirFacturaSoapIn">
+    <wsdl:part name="parameters" element="tns:EmitirFactura" />
+  </wsdl:message>
+  <wsdl:message name="EmitirFacturaSoapOut">
+    <wsdl:part name="parameters" element="tns:EmitirFacturaResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WebEjercicio2Soap">
+    <wsdl:operation name="SincronizarFechaHora">
+      <wsdl:input message="tns:SincronizarFechaHoraSoapIn" />
+      <wsdl:output message="tns:SincronizarFechaHoraSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCufd">
+      <wsdl:input message="tns:ObtenerCufdSoapIn" />
+      <wsdl:output message="tns:ObtenerCufdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EmitirFactura">
+      <wsdl:input message="tns:EmitirFacturaSoapIn" />
+      <wsdl:output message="tns:EmitirFacturaSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WebEjercicio2Soap" type="tns:WebEjercicio2Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SincronizarFechaHora">
+      <soap:operation soapAction="http://tempuri.org/SincronizarFechaHora" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCufd">
+      <soap:operation soapAction="http://tempuri.org/ObtenerCufd" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmitirFactura">
+      <soap:operation soapAction="http://tempuri.org/EmitirFactura" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WebEjercicio2Soap12" type="tns:WebEjercicio2Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="SincronizarFechaHora">
+      <soap12:operation soapAction="http://tempuri.org/SincronizarFechaHora" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ObtenerCufd">
+      <soap12:operation soapAction="http://tempuri.org/ObtenerCufd" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EmitirFactura">
+      <soap12:operation soapAction="http://tempuri.org/EmitirFactura" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WebEjercicio2">
+    <wsdl:port name="WebEjercicio2Soap" binding="tns:WebEjercicio2Soap">
+      <soap:address location="https://localhost:44313/WebEjercicio2.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WebEjercicio2Soap12" binding="tns:WebEjercicio2Soap12">
+      <soap12:address location="https://localhost:44313/WebEjercicio2.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
